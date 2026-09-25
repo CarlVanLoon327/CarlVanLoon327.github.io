@@ -1,0 +1,832 @@
+/*Обнуляем отступы*/   
+* {
+  margin: 0;
+  padding: 0;
+}
+	
+/* Убираем отступ снизу у картинок */ 
+img { 
+  vertical-align: bottom; 
+}
+	
+/* Масштабирование изображений в таблице */   
+img {
+  height: auto;
+  width: 100%;
+ /*max-width: 100%;
+ /* margin: 0 auto;*/
+}
+	
+/* Перенос текста   
+p {
+  width: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+}*/
+
+li {
+  font-size: 13pt; /* Размер шрифта в пикселах */   
+  margin-left: 41px; 
+  margin-right: 9px; 
+  margin-top: 1px; 
+  margin-bottom: 0px;
+  font-family: Arial, serif;
+  font-weight: normal; /* Жирный шрифт - bold*/
+  color: black;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+a { 
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+a:hover { 
+  text-decoration: underline; /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+  color: #0000FF; /* Цвет активной ссылки */
+  cursor: pointer;
+} 
+
+/* Горизонтальная полоса 1px */ 
+.polosa {
+  margin: 12px 40px; /* Отступ - 2-верх+низ лево+право 4-верх право низ лево */
+  border-top: 1px solid #808080;
+}
+
+/* Горизонтальная полоса 1px */ 
+.polosa_2{
+  margin: 0px 40px; /* Отступ - 2-верх+низ лево+право 4-верх право низ лево */
+  border-top: 1px solid #808080;
+}
+
+
+.green {
+  color: #008000;
+}
+.red {
+  color: #FF0000;
+}
+.black {
+  color: #000000;
+}
+.blue {
+  color: #0000FF;
+}
+
+
+
+/* -------------- Значки возле ссылок -------------- */
+a[href*="rar1"] {
+  background: url(/files/Info3.png) no-repeat center left;
+  padding-left: 19px;
+} 
+a[data-filetype="info"] {
+  background: url(/files/Info3.png) no-repeat center left;
+  padding-left: 19px;
+} 
+a[data-filetype="help"] {
+  background: url(/files/Help3.png) no-repeat center left;
+  padding-left: 19px;
+} 
+a[href*="exe"] {
+  background: url(/files/Warning3.png) no-repeat center left;
+  padding-left: 19px;
+} 
+a[data-filetype="warning"] {
+  background: url(/files/Warning3.png) no-repeat center left;
+  padding-left: 19px;
+} 
+/*a[href*="1234"], a[href*="Chto"], a[href*="kalku"] {
+  background: url(/files/Critical3.png) no-repeat center left;
+  padding-left: 19px;
+} */
+a[data-filetype="critical"] {
+  background: url(/files/Critical3.png) no-repeat center left;
+  padding-left: 19px;
+} 
+a[data-filetype="youtube"] {
+  background: url(/files/youtube24.png) no-repeat center left;
+  padding-left: 24px;
+} 
+a[data-filetype="higgsfield"] {
+  background: url(/files/higgsfield16.png) no-repeat center left;
+  padding-left: 19px;
+} 
+a[data-filetype="pika"] {
+  background: url(/files/pika16.png) no-repeat center left;
+  padding-left: 19px;
+} 
+
+
+
+
+/* ------------------- Контейнер страницы -----------------------*/   
+.container_page {
+  border: 0px solid #808080;
+  display: block;
+  height: auto;
+  max-width: 1112px; /* Максимальная ширина таблицы контейнера */
+  min-width: 779px; /* 489 Минимальная ширина таблицы */
+  margin: auto; /* Выравниваем таблицу по центру окна  */
+}
+/* Контейнеры блоков 1*/   
+.container_block_1 {
+  /*top: 0; /* --- Позиция фиксированного контейнера в рамках окна --- */
+  /*position: sticky; /* --- Фиксирует контейнер в рамках окна --- */
+  /*z-index: 2000; /* --- Положение фиксированного контейнера над другими элементами --- */
+  border-spacing: 1px 0px; /* Расстояние между ячейками */
+  border: 0px solid #808080;
+  width: 100%;
+  height: auto;  
+  display: table;
+}
+/* Контейнеры блоков 2*/   
+.container_block_2 {
+  /*top: 0; /* --- Позиция фиксированного контейнера в рамках окна --- */
+  /*position: sticky; /* --- Фиксирует контейнер в рамках окна --- */
+  /*z-index: 2000; /* --- Положение фиксированного контейнера над другими элементами --- */
+  border-spacing: 1px 0px; /* Расстояние между ячейками */
+  border: 0px solid #808080;
+  width: 100%; 
+  height: auto;
+  display: table;
+  margin: 0px 0px 1px 0px; /* Выравниваем таблицу по центру окна  */
+}
+/* Контейнеры блоков 3,4*/   
+.container_block_3,
+.container_block_4 {
+  /*top: 0; /* --- Позиция фиксированного контейнера в рамках окна --- */
+  /*position: sticky; /* --- Фиксирует контейнер в рамках окна --- */
+  /*z-index: 2000; /* --- Положение фиксированного контейнера над другими элементами --- */
+  border-spacing: 1px 0px; /* Расстояние между ячейками */
+  border: 0px solid #808080;
+  height: auto;
+  margin: 12px auto; /* Выравниваем таблицу по центру окна  */
+  display: table;
+}
+
+/* Контейнеры блоков 3*/   
+.container_block_3 {
+  width: 70%;
+}
+/* Контейнеры блоков 4*/   
+.container_block_4 {
+  width: 50%;
+}
+ 
+
+/* Шапка */   
+.shapka {
+  display: table-cell; 
+  width: 50%; 
+  border-spacing: 0px 0px; /* Расстояние между ячейками */
+  margin: auto; /* Выравниваем таблицу по центру окна  */
+}
+
+/* Контейнер слайдера */   
+.slider_container {
+  background: url(Fon_1.jpg);
+  padding: 9px 9px 19px; /* Поля вокруг текста */
+  text-align: center; /* Выравнивание по левому краю */
+  vertical-align: top; /* Выравнивание по вертикали*/
+  display: table-cell; 
+  width: 100%; 
+  border-spacing: 0px 0px; /* Расстояние между ячейками */
+  border: 1px solid #808080;
+  margin: auto; /* Выравниваем таблицу по центру окна  */
+}
+/* ----------------- Контейнер страницы END ---------------------*/   
+
+
+/* ------------------------- Главная --------------------------- */   
+/* Контейнер основной таблицы содержимого */   
+.table_container {
+  display: table; 
+  width: 100%; 
+  border-spacing: 1px 1px; 
+  margin: 0; /* auto - сдвигает весь блок вправо на 1px */
+}
+ 
+/* Боковые колонки */   
+.lateral_cell {
+  width: 22%;
+  text-align: center;
+  display: table-cell;
+  border: 1px solid #808080;
+  background-color: #ececec;
+  padding: 0px 9px; /* Поля вокруг текста */
+}
+
+/* Контейнер блоков центральной колонки */   
+.table_cell_container {
+  width: auto;
+  text-align: center;
+  display: table-cell; 
+  border-spacing: 0px 0px;
+  background-color: #ececec;
+}
+/* Блоки центральной колонки */   
+.table_block {
+  display: table; 
+  width: 100%;
+  padding: 0px 0px 1px 0px;
+}
+.table_block_bottom {
+  display: table; 
+  width: 100%;
+}
+.table_cell {
+  width: 100%;
+  text-align: left;
+  display: table-cell; 
+  padding: 0;
+  margin: 0;
+  border: 1px solid #808080;
+  background-color: #ececec;
+}
+.table_cell_2 {
+  width: 100%;
+  text-align: left;
+  display: table-cell; 
+  padding: 19px;
+  margin: 0;
+  border: 0px solid #808080;
+  background-color: #ececec;
+}
+/* ---------------------- Главная END ----------------------- */
+
+
+/* ------------------------- Фото --------------------------- */ 
+.block_foto_container_1,  
+.block_foto_container_2,
+.block_foto_container_3 {
+  vertical-align: middle; /* Выравнивание по вертикали*/	
+  text-align: center;	
+  display: table-cell;
+  border: 1px solid #808080;
+  background: #ececec; /* Цвет фона */
+  /*margin: 0 auto; /* центрируем основной контейнер */
+  padding: 29px 29px;
+}
+
+.block_foto_container_3 {
+  width: 33.33333333333333%;
+}
+
+.block_foto_container_3_v2 {
+  width: 33.33333333333333%;
+  border: 0px solid #808080;
+  display: table-cell;
+  background: #ececec; /* Цвет фона */
+  padding: 12px 9px;
+}
+
+.block_foto_container_2 {
+  width: 50%;
+}
+
+.block_foto_container_1 {
+  width: 100%;
+}
+
+.block_foto_1 {
+  display: table;
+  margin: 0 auto; /* центрируем основной контейнер */  
+}
+/* ---------------------- Фото END ----------------------- */
+
+   
+/* ------------------------- Файлы --------------------------- */ 
+.files_container {
+  text-align: center;	
+  display: table-cell;
+  border: 1px solid #808080;
+  background: #ececec; /* Цвет фона */
+  padding: 10px 10px;
+  width: 33.33333333333333%;
+}
+/* ---------------------- Файлы END ----------------------- */
+	
+
+/* ------------------------ Подвал -------------------------- */   
+.footer_container {
+  display: table-cell;
+  background: #ececec; /* Цвет фона */
+  border: 1px solid #808080;
+  padding-right: 45px; /* Поле справа */
+  font-family: Arial, serif;
+  font-size: 14pt; /* Размер шрифта в пикселах */  
+  text-align: right; /* Сдвигаем текст к правому краю */
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  height: 60px;
+  margin: 0px 0px 1px 0px; /* Отступ - верх право низ лево */
+}
+
+/* ------------------------ Полоса -------------------------- */   
+.band_container {
+  display: table-cell;
+  background: #ececec; /* Цвет фона */
+  border: 1px solid #808080;
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  height: 60px;
+  margin: 0px 0px 1px 0px; /* Отступ - верх право низ лево */
+  padding: 0px 199px;
+}
+
+/* -------------------- Поиск контейнер -------------------- */   
+.search {
+  display: block;
+  text-align: center; 
+  margin: 0px 0px 0px 0px; /* Отступ - верх право низ лево */
+}
+
+/* ------------------------ Обзор -------------------------- */   
+#review_container {
+  display: table-cell;
+  background: #ececec; /* Цвет фона */
+  border: 1px solid #808080;
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  height: 60px;
+  padding: 20px 20px;
+}
+
+/* ------------------------ Материалы ---------------------- */   
+#material_container {
+  display: table-cell;
+  background: #ececec; /* Цвет фона */
+  border: 1px solid #808080;
+  vertical-align: top; /* Выравнивание по вертикали*/
+  width: 80%;
+  padding: 10px 10px;
+}
+#material_container_block {
+  display: table;
+  width: 100%;
+  padding: 0px 0px;
+}
+#material_foto_cell_20 {
+  display: table-cell;
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  width: 20%;
+  padding: 10px 10px;
+}
+#material_foto_cell_20 img{
+  border: 1px solid #808080;
+}
+
+#material_info_cell_80 {
+  display: table-cell;
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  width: 80%;
+  padding: 10px 10px;
+}
+
+/* ------------------------ YouTube ----------------------- */   
+.you_tube_container {
+  display: table-cell;
+  background: #ececec; /* Цвет фона */
+  border: 0px solid #808080;
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  height: 388px;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+/* ------------------------- Cell 50%---------------------- */ 
+#cell_50 {
+  text-align: center;	
+  display: table-cell;
+  border: 1px solid #808080;
+  background: #ececec; /* Цвет фона */
+  padding: 10px 3px;
+  width: 50%;
+}
+
+/* ------------------------- Cell 20%---------------------- */ 
+#cell_20 {
+  text-align: center;	
+  display: table-cell;
+  border: 1px solid #808080;
+  background: #ececec; /* Цвет фона */
+  padding: 0px 0px;
+  width: 20%;
+}
+
+/* --------------------- Почта контейнер -------------------- */
+.pochta_container_block {
+  border: 0px solid #808080;
+  width: 60%;
+  min-width: 100px;  
+  display: table;
+  height: auto;
+  margin: 0 auto; /* Выравниваем таблицу по центру окна  */
+
+} 
+.pochta_text,
+.pochta_img {
+  border: 0px solid #808080;	
+  display: table-cell;
+  vertical-align: middle; /* Выравнивание по вертикали*/
+  width: 50%;
+  min-width: 100px;
+  max-width: 110px;  
+}
+.pochta_img {
+  float: right;	
+  margin: 0px 8px 0px 0px; /* Отступ - верх право низ лево */
+}
+.pochta_text {
+  font-family: Arial, serif;
+  font-size: 14pt; /* Размер шрифта в пикселах */
+  color: #000;	
+  text-align: left; 
+  white-space: nowrap; /* Не переносить текст */
+}
+.pochta_img_google {
+  max-width: 123px; 
+}
+.pochta_img_yandex {
+  max-width: 73px; 
+}
+
+
+
+
+
+/* --------------------- Шрифты страницы -------------------- */ 
+.font_1,
+.font_1_url,
+.font_2, 
+.font_3,
+.font_4,
+.font_5,
+.font_6,
+.font_7,
+.files_container,
+.band_container {
+  text-align: center; /* Выравнивание */
+  font-family: Arial, serif;
+  color: #000; 
+}
+	
+.font_1 {
+  text-decoration: underline; /* Подчеркивание текста */
+  font-size: 13pt; /* Размер шрифта в пикселах */
+  margin-top: 2pt; /* Отступ сверху */
+  margin-bottom: 2pt; /* Отступ снизу */
+}
+.font_2 {
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 14pt; /* Размер шрифта в пикселах */
+  margin-top: 2pt; /* Отступ сверху */
+  margin-bottom: 2pt; /* Отступ снизу */
+}
+.font_3 {
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 10pt; /* Размер шрифта в пикселах */
+  margin-top: 0pt; /* Отступ сверху */
+  margin-bottom: 0pt; /* Отступ снизу */
+}
+.font_4 {
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  line-height: 1.1; /* Отступ между строк */
+}
+.font_6 {
+  text-decoration: underline; /* Подчеркивание текста */
+  font-size: 10pt; /* Размер шрифта в пикселах */
+  margin-top: 2pt; /* Отступ сверху */
+  margin-bottom: 2pt; /* Отступ снизу */
+}
+.font_7 {
+  text-align: right; /* Выравнивание */
+  text-decoration: underline; /* Подчеркивание текста */
+  font-size: 10pt; /* Размер шрифта в пикселах */
+  margin-right: 20pt; /* Отступ сверху */
+  margin-top: 2pt; /* Отступ сверху */
+  margin-bottom: 2pt; /* Отступ снизу */
+}
+.font_8 {
+  font-family: Arial, serif;
+  color: #008000;  
+  text-align: left; /* Выравнивание */
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 16pt; /* Размер шрифта в пикселах */
+  padding: 0px;
+}
+.font_9 {
+  font-family: Helvetica, Arial, serif;
+  color: #333;	
+  text-align: left; /* Выравнивание */
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 11pt; /* Размер шрифта в пикселах */
+  padding: 9px 0px 0px 0px;
+}
+.font_10 {
+  font-family: Helvetica, Arial, serif;
+  color: #333; 
+  text-decoration: none; /* Подчеркивание текста */
+  text-align: left;
+  font-size: 14pt; /* Размер шрифта в пикселах */
+  letter-spacing: 0.33px;
+  line-height: 1.4; /* Отступ между строк */
+}
+.font_11 {
+  font-family: Helvetica, Arial, serif;
+  color: #333; 
+  text-decoration: none; /* Подчеркивание текста */
+  text-align: left;
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  letter-spacing: 0.33px;
+  line-height: 1.2; /* Отступ между строк */
+}
+.band_container {
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 20pt; /* Размер шрифта в пикселах */
+  line-height: 1.1; /* Отступ между строк */
+}
+.files_container {
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  line-height: 1.3; /* Отступ между строк */
+}
+.font_1_url {
+  text-decoration: none; /* Подчеркивание текста */
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  margin-top: 2pt; /* Отступ сверху */
+  margin-bottom: 2pt; /* Отступ снизу */
+}
+.font_1_url:hover {
+  text-decoration: underline; /* Подчеркивание текста */
+  color: #0000FF; /* Цвет активной ссылки */
+}
+.font_2_url {
+  text-decoration: none; /* Подчеркивание текста */
+  color: #008000; /* Цвет активной ссылки */
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  margin-top: 2pt; /* Отступ сверху */
+  margin-bottom: 2pt; /* Отступ снизу */
+}
+.font_2_url:hover {
+  text-decoration: underline; /* Подчеркивание текста */
+  color: #0000FF; /* Цвет активной ссылки */
+}
+/* Главная - Текст центрального блока ЗАКЛАДКИ */   
+.table_cell_text {
+  /*border: 1px solid #808080;*/   
+  font-family: Arial, serif;
+  font-size: 14pt; /* Размер шрифта в пикселах */
+  color:black; 
+  text-align: left; /* Выравнивание */
+  padding: 1px 1px; /* Поля вокруг текста */
+  width: auto; /* Ширина таблицы */
+  text-decoration: none; /* Подчеркивание текста */
+}
+
+
+
+
+/*-------------------------- Кнопки ------------------------------*/ 
+.button_block_container {
+  border-spacing: 0px 0px; /* Расстояние между ячейками */
+  border: 0px solid #808080;
+  width: 100%;
+  display: table;
+  height: auto;
+  margin: 0px 0px 1px 0px; /* Отступ - 2-верх+низ лево+право 4-верх право низ лево */ 
+  /*padding: 1px 0px 1px 0px; /* Отступ - верх право низ лево */
+} 
+.button_container {
+  display: table-cell; 
+  width: 16.66666666666667%;
+}
+.button_text {
+  font-family: Arial, serif;
+  font-size: 11pt; /* Размер шрифта в пикселах */
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  border-left: 1px solid #ececec;
+  background: #808080; /* Цвет фона */
+}
+.button_text:hover {
+  text-decoration: none;	
+  color: #000;
+  cursor: pointer;
+  background: #ececec; /* Цвет фона */
+}	
+
+.button_text_r {
+  font-family: Arial, serif;
+  font-size: 11pt; /* Размер шрифта в пикселах */
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #808080;
+  background: #808080; /* Цвет фона */
+}
+.button_text_r:hover {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #000;
+  cursor: pointer;
+  border-right: 1px solid #808080;
+  background: #ececec; /* Цвет фона */
+}	
+.button_text_l {
+  font-family: Arial, serif;
+  font-size: 11pt; /* Размер шрифта в пикселах */
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  border-left: 1px solid #808080;
+  background: #808080; /* Цвет фона */
+}
+.button_text_l:hover {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #000;
+  cursor: pointer;
+  border-left: 1px solid #808080;
+  background: #ececec; /* Цвет фона */
+}	
+
+/* Кнопки пустые */ 
+.button_space {
+  font-family: Arial, serif;
+  font-size: 11pt; /* Размер шрифта в пикселах */
+  display: block;
+  padding: 10px 0px;
+  border-left: 1px solid #ececec;
+  background: #808080; /* Цвет фона */
+}
+
+/* --------------- Контейнер кнопки - СКАЧАТЬ -----------------*/
+/* Кнопка СКАЧАТЬ - прайс */   
+   .button_price_container {
+    margin: 5px auto; /* Отступаем справа 5px и выравниваем таблицу по центру окна  */
+   }
+   .button_price {
+	width: 159px; /* Ширина кнопки */
+    min-width: 56px; /* Минимальная ширина кнопки */
+   }
+   .button_price_text {
+	width: 800px; /* Ширина контейнера текста */
+    min-width: 300px; /* Минимальная ширина контейнера текста */
+   }
+/* Кнопка - СКАЧАТЬ - прайс */   
+   .button_price_font {
+    font-family: Arial, serif;
+	font-size: 11pt; /* Размер шрифта в пикселах */
+	text-align: center;
+    color: #FFF;
+	display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    border: 1px solid #808080;
+    background: #8B8970;
+   }
+   .button_price_font:hover {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #0000FF;
+    cursor: pointer;
+    background: #FFFACD;
+   }	
+ /* Надпись - скачать прайс лист в формате Excel */   
+   .button_price_text_font {
+    font-family: Arial, serif;
+	font-size: 11pt; /* Размер шрифта в пикселах */
+	text-align: left;
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+   }
+ 
+   
+
+
+/* Кнопки картинки - движение  
+.img_1 {
+  transition: all 0.8s ease;
+}
+.img_1:hover {
+  transform: scale(1.06);
+}	
+.img_1:active {
+  transform: scale(1.01);
+}*/
+
+/* Кнопки картинка - index общий*/   
+.kartinka {
+  margin-top: 8px; /* Отступ сверху */
+  margin-bottom: 8px; /* Отступ снизу */
+  margin-left: 19px; /* Отступ слева */
+  margin-right: 19px; /* Отступ справа */
+  border: 0px solid #808080;
+}
+   
+   
+/* Кнопки google и Яндекс */ 
+.google {
+  text-align: center; /* Выравнивание */
+  margin-top: 8px; /* Отступ сверху */
+  margin-bottom: 8px; /* Отступ снизу */
+  margin: auto;
+  width: 50%;
+  max-width: 120px;
+}
+.yandex {
+  text-align: center; /* Выравнивание */
+  margin-top: 8px; /* Отступ сверху */
+  margin-bottom: 8px; /* Отступ снизу */
+  margin: auto;
+  width: 30%;
+  max-width: 83px;
+}
+
+/* Фиксируем кнопки верх страницы */ 
+#position_sticky {
+  top: 0; /* --- Позиция фиксированного контейнера в рамках окна --- */
+  position: sticky; /* --- Фиксирует контейнер в рамках окна --- */
+  z-index: 310; /* --- Положение фиксированного контейнера над другими элементами --- */
+} 
+/*--------------------------- Кнопки END ----------------------------*/ 
+
+
+
+/* Вид менюшки возле курсора */   
+   #tooltip {
+    /*background:url(ggg.gif);*/
+	opacity: 0.8; /* Прозрачность */
+    background-color: #FFF68F;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+	border-radius: 5px 5px;
+    color: black; /* Цвет шрифта */
+    margin: 12px; /* Расстояние от курсора */
+    padding: 5px 5px;
+    position: absolute;
+    visibility: hidden;
+    font-family: arial, sans-serif;
+    font-size: 20px; 
+    line-height: 16px;
+    text-align: center; /* Выравнивание */
+}
+
+   
+  
+@media (max-width: 889px) {
+   .font_1 { font-size: 11pt; /* Размер шрифта в пикселах */ }
+   .font_2 { font-size: 12pt; /* Размер шрифта в пикселах */ }
+   .font_3 { font-size: 11pt; /* Размер шрифта в пикселах */ }
+   .font_4 { font-size: 11pt; /* Размер шрифта в пикселах */ }  
+   font.font02 { font-size: 8pt; /* Размер шрифта в пикселах */ }
+   li {
+	font-size: 12pt; /* Размер шрифта в пикселах */   
+    margin-left: 33px; 
+	margin-right: 9px; 
+	margin-top: 1px; 
+	margin-bottom: 0px;
+}
+   .button_text {
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  padding: 7px 0px;
+}
+   .button_text_r {
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  padding: 7px 0px;
+}
+   .button_text_l {
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  padding: 7px 0px;
+}
+   .button_space {
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  padding: 7px 0px;
+}
+   .button_price_font {
+  font-size: 12pt; /* Размер шрифта в пикселах */
+  padding: 7px 0px;
+}
+
+/* ------------------------- Фото --------------------------- */ 
+.block_foto_container_3 {
+  padding: 9px 9px;
+}
+
+/* -------------Кнопки картинка - index общий-----------------*/   
+.kartinka {
+  margin-left: 12px; /* Отступ слева */
+  margin-right: 12px; /* Отступ справа */
+}
+   
+}

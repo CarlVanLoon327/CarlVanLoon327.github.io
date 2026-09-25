@@ -1,0 +1,755 @@
+/*Обнуляем отступы*/   
+  * {
+    margin: 0;
+    padding: 0;
+   }
+
+/* Убираем отступ снизу у картинок */ 
+   img { 
+    vertical-align: bottom; 
+   }
+/* Масштабирование изображений в таблице */   
+   td img {
+    height: auto;
+    width: auto;
+    max-width: 100%; 
+   }  
+
+
+   
+/* Шапка */   
+   table.shapka {
+    width: auto; /* Ширина таблицы */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   td.shapka-st {
+	width: 1259px; /* Ширина контейнера */
+	min-width: 786px; /* Останавливает сдвигание шапки */
+}   
+   table.shapka33 {
+    border-spacing: 0px; /* Расстояние между ячейками */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    /* background: url(shapka_v8.jpg); */
+	/* background-size: 100% 100%; /* Растягивает и сжимает размер фона */
+   }
+/* Тонкая полоса между абзацами */   
+   p.img {
+	margin-top: 0px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+   }
+   
+
+   
+/* Кнопки */   
+   table.knopki {
+    border-spacing: 1px 0px; /* Расстояние между ячейками */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   .kncontainer {
+	width: 251px; /* Ширина контейнера */
+    min-width: 156px; /* Минимальная ширина контейнера */
+   }
+/* Кнопки пустые */   
+   p.com0 {
+	text-align: center;
+	display: block;
+	line-height: 29px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #808080;
+    background: linear-gradient(to bottom, #fff, #CDC9C9, #8B8989);
+   }
+/* Кнопки надпись */   
+   a.com {
+    font-family: Arial, serif;
+	text-align: center;
+    color: black;
+	display: block;
+	line-height: 29px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 1px solid #808080;
+    background: linear-gradient(to bottom, #fff, #CDC9C9, #8B8989);
+	/* transition: all 0.8s ease; */
+   }
+   a.com:hover {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #0000FF;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff, #FFFAFA, #CDC9C9);
+    /*transform: scale(1.02);*/
+   }	
+   a.com:active {
+    color: #00FFFF;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff, #FFFAFA, #CDC9C9);
+   }
+   a.com33:hover {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #0000FF;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff, #FFFAFA, #CDC9C9);
+   }	
+   a.com33:active {
+    color: #00FFFF;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff, #FFFAFA, #CDC9C9);
+   }
+ 
+   img.zzz {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+	transition: all 0.8s ease;
+	width: 100%; /* Ширина кнопки */
+   }
+   img.zzz:hover {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    cursor: pointer;
+    transform: scale(1.06);
+   }	
+   img.zzz:active {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    cursor: pointer;
+    transform: scale(1.01);
+   }
+   img.zzz2 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%; /* Ширина кнопки */	
+   }
+    img.zzz3 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: auto; /* Ширина кнопки */
+	max-width: 100%; /* Останавливает сдвигание шапки */
+	
+   }
+  
+
+/* ********************* */   
+/*                       */   
+/* Картинка эффект Sadie */   
+/*                       */   
+/* ********************* */   
+.grid {
+	position: relative;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 39px 39px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+	transition: all 0.25s ease;
+	
+}
+
+.grid figure figcaption {
+    font-family: Arial, serif;
+	text-align: center;
+    color: black;
+	padding: 2em 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.01em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+   
+   
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.9) 75%);
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.9) 75%);
+	content: '';
+	opacity: 0;
+}
+
+figure.effect-sadie h2 {
+    font-family: Arial, serif;
+	font-size: 19pt; /* Размер шрифта в пикселах */
+	position: absolute;
+	bottom: 23%;
+	left: 0;
+	width: 100%;
+	color: #000;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	background: #ffffff;
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 7em 0;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate(0,10px);
+	transform: translate(0,10px);
+}
+
+figure.effect-sadie:hover h2 {
+	color: #fff;
+	-webkit-transform: translate(0,-560%);
+	transform: translate(0,-560%);
+    background: 0;
+	
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
+}
+
+figure.effect-sadie:hover img {
+	opacity: 0.3;
+}
+/* ********************* */   
+/* Картинка эффект Sadie */   
+/*         END           */   
+/* ********************* */   
+   
+  
+   
+   
+ 
+/* Кнопка СКАЧАТЬ - прайс */   
+   table.knopka-sk {
+    margin: 5px auto; /* Отступаем справа 5px и выравниваем таблицу по центру окна  */
+   }
+   .kncontainer-sk {
+	width: 200px; /* Ширина кнопки */
+    min-width: 56px; /* Минимальная ширина кнопки */
+   }
+   .kncontainer-sktxt {
+	width: 800px; /* Ширина контейнера текста */
+    min-width: 300px; /* Минимальная ширина контейнера текста */
+   }
+/* Надпись - скачать прайс лист в формате Excel */   
+   p.com-sk {
+    font-family: Arial, serif;
+	text-align: left;
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+   }
+/* Кнопка - СКАЧАТЬ - прайс */   
+   a.com-sk {
+    font-family: Arial, serif;
+	text-align: center;
+    color: black;
+	display: block;
+	line-height: 29px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 1px solid #808080;
+    background: linear-gradient(to bottom, #fff, #CDC9A5, #8B8970);
+	transition: all 0.8s ease;
+   }
+   a.com-sk:hover {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #0000FF;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff, #FFFACD, #CDC9A5);
+	transform: scale(1.02);
+   }	
+   a.com-sk:active {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #00FFFF;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff, #FFFACD, #CDC9A5);
+   }
+
+   
+
+/* Кнопки картинка - index общий*/   
+   p.kartinka {
+    margin-top: 8px; /* Отступ сверху */
+	margin-bottom: 8px; /* Отступ снизу */
+	margin-left: 12px; /* Отступ слева */
+    margin-right: 12px; /* Отступ справа */
+	border: 0px solid #808080;
+   }
+/* Кнопки картинка - index центр */
+   td.jjj {
+	width: 333px; /* Ширина контейнера */
+	min-width: 150px; /* Минимальная ширина контейнера */
+   }
+/* Кнопки картинка - index центр */
+   td.jjj1 {
+	width: 499px; /* Ширина контейнера */
+	min-width: 150px; /* Минимальная ширина контейнера */
+   }
+   
+/* Таблица общий */   
+   table.jewel {
+    font-family: Arial, serif;
+	font-size: 12pt; /* Размер шрифта в пикселах */
+    color:black;  
+    max-width: 1257px; /* Ширина таблицы */
+	min-width: 638px; /* Минимальная ширина контейнера */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+	/*margin-bottom: 0px; /* Отступ снизу */
+	/*margin-top: 0px; /* Отступ сверху */
+   }
+/* Таблица слайдер */   
+   table.jewel-slider {
+    font-family: Arial, serif;
+	font-size: 12pt; /* Размер шрифта в пикселах */
+    color:black;  
+    width: auto; /* Ширина таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+	margin-bottom: 0px; /* Отступ снизу */
+	margin-top: 0px; /* Отступ сверху */
+    border-spacing: 0px; /* Расстояние между ячейками */
+   }
+/* Таблица слайдер*/   
+   td.gggslider {
+    /*background: #ececec; /* Цвет фона  */
+    background: url(Fon_1.jpg);
+	border: 0px solid #808080;
+    /*font-family: Arial, serif;
+	font-size: 14pt; /* Размер шрифта в пикселах */
+	/*line-height: 1.2; /* Отступ между строк */
+	/*margin-top: 0.5em; /* Отступ сверху */
+    /*margin-bottom: 1em; /* Отступ снизу */
+	padding: 9px 9px 19px; /* Поля вокруг текста */
+    /*color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	width: 1239px; /* Ширина контейнера */
+	min-width: 763px; /* Минимальная ширина контейнера */
+   }
+   
+/* Таблица колонки - index боковые левая*/   
+   td.gggibl {
+    background: #ececec; /* Цвет фона  */
+    /* background: url(spektr_lev.jpg); */
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	font-size: 14pt; /* Размер шрифта в пикселах */
+	line-height: 1.2; /* Отступ между строк */
+	margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 1em; /* Отступ снизу */
+	padding: 2px; /* Поля вокруг текста */
+    color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	width: 183pt; /* Ширина контейнера */
+	min-width: 6pt; /* Минимальная ширина контейнера */
+   }
+/* Таблица колонки - index боковые правая*/   
+   td.gggibr {
+    background: #ececec; /* Цвет фона */
+    /* background: url(spektr_prav.jpg); */
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	font-size: 14pt; /* Размер шрифта в пикселах */
+	line-height: 1.2; /* Отступ между строк */
+	margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 1em; /* Отступ снизу */
+	padding: 2px; /* Поля вокруг текста */
+    color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	width: 183pt; /* Ширина контейнера */
+	min-width: 6pt; /* Минимальная ширина контейнера */
+   }
+   
+   
+/* Таблица колонки - index центр */   
+   table.centr_bloc {
+    border-spacing: 0px; /* Расстояние между ячейками */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+	margin-bottom: 1px; /* Отступ снизу */
+   }
+   table.centr_bloc_niz {
+    border-spacing: 0px; /* Расстояние между ячейками */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+	margin-bottom: 0px; /* Отступ снизу */
+   }
+/* Таблица колонки - index центр блок a*/   
+   td.centr_bloc_a {
+    /*background: url(spektr_lev.jpg);*/
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	/*font-size: 16pt; /* Размер шрифта в пикселах */
+	line-height: 1.3; /* Отступ между строк */
+	padding: 0px; /* Поля вокруг текста */
+    /*color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	/*border-spacing: 0px; /* Расстояние между ячейками */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	width: 569pt; /* Ширина контейнера */
+	min-width: 369pt; /* Минимальная ширина контейнера */
+   }
+/* Таблица колонки - foto */   
+   td.centr_bloc_foto_2 {
+    /*background: url(spektr_lev.jpg);*/
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	font-size: 16pt; /* Размер шрифта в пикселах */
+	line-height: 1.3; /* Отступ между строк */
+	padding: 0px; /* Поля вокруг текста */
+    color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	padding: 10px; /* Поля вокруг текста */
+	vertical-align: center; /* Выравнивание по вертикали*/
+	width: 606px; /* Ширина контейнера */
+	min-width: 370px; /* Минимальная ширина контейнера */
+   }
+/* Таблица колонки - foto */   
+   td.centr_bloc_foto_1 {
+    /*background: url(spektr_lev.jpg);*/
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	font-size: 16pt; /* Размер шрифта в пикселах */
+	line-height: 1.3; /* Отступ между строк */
+    color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	padding: 10px; /* Поля вокруг текста */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	width: 1234px; /* Ширина контейнера */
+	min-width: 763px; /* Минимальная ширина контейнера */
+   }
+/* Таблица колонки - files */   
+   td.gggf {
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	line-height: 1.3;
+	margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 1em; /* Отступ снизу */
+	padding: 2px; /* Поля вокруг текста */
+    color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	width: 412px; /* Ширина контейнера */
+	min-width: 253px; /* Минимальная ширина контейнера */
+   }
+/* Надпись заголовки */   
+   p.hit {
+    text-align: center; /* Выравнивание */
+	font-family: Arial, serif;
+	text-decoration: underline; /* Подчеркивание текста */
+	color: black; 
+	font-size: 14pt; /* Размер шрифта в пикселах */
+	margin-top: 5pt; /* Отступ сверху */
+    margin-bottom: 2pt; /* Отступ снизу */
+   }
+/* Надпись 1 */   
+   p.hit1 {
+    text-align: center; /* Выравнивание */
+	font-family: Arial, serif;
+	text-decoration: none; /* Подчеркивание текста */
+	color:black; 
+	font-size: 12pt; /* Размер шрифта в пикселах */
+	margin-top: 2pt; /* Отступ сверху */
+    margin-bottom: 2pt; /* Отступ снизу */
+   }
+/* Надпись 2 */   
+   p.hit2 {
+    text-align: center; /* Выравнивание */
+	font-family: Arial, serif;
+	text-decoration: underline; /* Подчеркивание текста */
+	color:black; 
+	font-size: 10pt; /* Размер шрифта в пикселах */
+	margin-top: 0pt; /* Отступ сверху */
+    margin-bottom: 0pt; /* Отступ снизу */
+   }
+/* Надпись 3 */   
+   p.hit3 {
+    text-align: center; /* Выравнивание */
+	font-family: Arial, serif;
+	text-decoration: none; /* Подчеркивание текста */
+	color:black; 
+	font-size: 10pt; /* Размер шрифта в пикселах */
+	margin-top: 0pt; /* Отступ сверху */
+    margin-bottom: 0pt; /* Отступ снизу */
+   }
+/* Убираем подчеркивание у ссылок */   
+   a { 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+/* Ссылки */   
+   a:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+	color: #0000FF; /* Цвет активной ссылки */
+    cursor: pointer;
+   } 
+
+   
+/* Таблица общий - index центр ДОСКА ОБЬЯВЛЕНИЙ */   
+   table.centr1 {
+	/*border: 1px solid #808080;*/   
+    font-family: Arial, serif;
+	font-size: 14pt; /* Размер шрифта в пикселах */
+    color:black; 
+    text-align: left; /* Выравнивание */
+	padding: 1px 1px; /* Поля вокруг текста */
+    width: auto; /* Ширина таблицы */
+   	text-decoration: none; /* Подчеркивание текста */
+   }
+   td.centr11 {
+	border: 1px solid #808080;
+    font-family: Arial, serif;
+	font-size: 14pt; /* Размер шрифта в пикселах */
+    color: black;
+    text-align: left; /* Выравнивание */
+	vertical-align: top; /* Выравнивание по вертикали*/
+	padding: 1px 1px; /* Поля вокруг текста */
+    width: auto; /* Ширина таблицы */
+   	text-decoration: none; /* Подчеркивание текста */
+   }
+   p.font01 {
+	font-size: 14pt; /* Размер шрифта в пикселах */   
+    margin-left: 9px; 
+	margin-right: 9px; 
+	margin-top: 1px; 
+	margin-bottom: 0px;
+   }
+   font.font02 {
+	font-size: 11pt; /* Размер шрифта в пикселах */
+    font-weight: normal; /* Жирный шрифт */	
+   }
+   .green {
+    color: #008000;
+   }
+   .red {
+    color: #FF0000;
+   }
+   .black {
+    color: #000000;
+   }
+
+   li {
+	font-size: 14pt; /* Размер шрифта в пикселах */   
+    margin-left: 41px; 
+	margin-right: 9px; 
+	margin-top: 1px; 
+	margin-bottom: 0px;
+    font-family: Arial, serif;
+    font-weight: normal; /* Жирный шрифт - bold*/
+    color: black;
+   }
+
+   
+   
+   
+/* Подвал */   
+   td.podval {
+    /*background: url(shapka_v8.jpg); */
+	/*background-position: 100%; */
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    /*border-spacing: 0px 0px; /* Расстояние между ячейками */
+    font-family: Arial, serif;
+	font-size: 14pt; /* Размер шрифта в пикселах */
+    padding-right: 45px; /* Поле справа */	
+	/*line-height: 1.3;*/
+	/*margin-top: 0.5em; /* Отступ сверху */
+    /*margin-bottom: 1em; /* Отступ снизу */
+	/*padding: 0px; /* Поля вокруг текста */
+    color: black; /* Цвет текста */
+    text-align: right; /* Выравнивание по левому краю */
+	vertical-align: middle; /* Выравнивание по вертикали*/
+    height: 60px;
+	width: 1209px; /* Ширина контейнера */
+	min-width: 738px; /* Минимальная ширина контейнера */
+   }
+/* Полоса тонкая разделительная */   
+   td.polosa1 {
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    /*border-spacing: 0px 0px; /* Расстояние между ячейками */
+    /*font-family: Arial, serif;
+	/*font-size: 14pt; /* Размер шрифта в пикселах */
+    /*padding-right: 45px; /* Поле справа */	
+	/*line-height: 1.3;*/
+	/*margin-top: 0.5em; /* Отступ сверху */
+    /*margin-bottom: 1em; /* Отступ снизу */
+	/*padding: 0px; /* Поля вокруг текста */
+    /*color: black; /* Цвет текста */
+    /*text-align: right; /* Выравнивание по левому краю */
+	vertical-align: middle; /* Выравнивание по вертикали*/
+    height: 2px;
+	width: 1210px; /* Ширина контейнера */
+	min-width: 100px; /* Минимальная ширина контейнера */
+   }
+/* Полоса надпись ПРАЙС */   
+   td.polosa2 {
+    /*background: url(shapka_v8.jpg); */
+	/*background-position: 100%; */
+	/*background-size: 100% 100%; /* Растягивает и сжимает размер фона */
+    background: #ececec; /* Цвет фона */
+	border: 1px solid #808080;
+    /*border-spacing: 0px 0px; /* Расстояние между ячейками */
+    font-family: Arial, serif;
+	font-size: 20pt; /* Размер шрифта в пикселах */
+    /*padding-right: 45px; /* Поле справа */	
+	/*line-height: 1.3;*/
+	/*margin-top: 0.5em; /* Отступ сверху */
+    /*margin-bottom: 1em; /* Отступ снизу */
+	/*padding: 0px; /* Поля вокруг текста */
+    color: black; /* Цвет текста */
+    text-align: center; /* Выравнивание по левому краю */
+	vertical-align: middle; /* Выравнивание по вертикали*/
+    height: 60px;
+	width: 1254px; /* Ширина контейнера */
+	min-width: 783px; /* Минимальная ширина контейнера */
+   }
+/* Вид менюшки возле курсора */   
+   #tooltip {
+    /*background:url(ggg.gif);*/
+	opacity: 0.8; /* Прозрачность */
+    background-color: #FFF68F;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+	border-radius: 5px 5px;
+    color: black; /* Цвет шрифта */
+    margin: 12px; /* Расстояние от курсора */
+    padding: 5px 5px;
+    position: absolute;
+    visibility: hidden;
+    font-family: arial, sans-serif;
+    font-size: 20px; 
+    line-height: 16px;
+    text-align: center; /* Выравнивание */
+}
+/* Значки возле ссылок */
+   a[href*="rar1"] {
+    background: url(/files/Info3.png) no-repeat center left;
+    padding-left: 19px;
+} 
+   a[data-filetype="info"] {
+    background: url(/files/Info3.png) no-repeat center left;
+    padding-left: 19px;
+} 
+   a[data-filetype="help"] {
+    background: url(/files/Help3.png) no-repeat center left;
+    padding-left: 19px;
+} 
+   a[href*="exe"] {
+    background: url(/files/Warning3.png) no-repeat center left;
+    padding-left: 19px;
+} 
+   a[data-filetype="warning"] {
+    background: url(/files/Warning3.png) no-repeat center left;
+    padding-left: 19px;
+} 
+ /*a[href*="1234"], a[href*="Chto"], a[href*="kalku"] {
+    background: url(/files/Critical3.png) no-repeat center left;
+    padding-left: 19px;
+} */
+   a[data-filetype="critical"] {
+    background: url(/files/Critical3.png) no-repeat center left;
+    padding-left: 19px;
+} 
+   table {
+    border-spacing: 1px; /* Расстояние между ячейками */
+   }
+
+@media (max-width: 889px) {
+   td.gggibr { font-size: 11pt; /* Размер шрифта в пикселах */ }
+   p.hit { font-size: 12pt; /* Размер шрифта в пикселах */ }
+   p.font01 { font-size: 12pt; /* Размер шрифта в пикселах */ }  
+   font.font02 { font-size: 8pt; /* Размер шрифта в пикселах */ }
+   li {
+	font-size: 12pt; /* Размер шрифта в пикселах */   
+    margin-left: 33px; 
+	margin-right: 9px; 
+	margin-top: 1px; 
+	margin-bottom: 0px;
+   }
+/* ********************* */   
+/*                       */   
+/* Картинка эффект Sadie */   
+/*                       */   
+/* ********************* */   
+/* Common style */
+.grid figure {
+	margin: 12px 12px;
+}
+   
+}

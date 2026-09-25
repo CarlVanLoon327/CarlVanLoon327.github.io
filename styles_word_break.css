@@ -1,0 +1,6 @@
+/* Перенос текста  */ 
+p {
+  width: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+}
